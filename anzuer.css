@@ -1,0 +1,672 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+:root {
+    --primary: rgb(0, 0, 0);
+    --corner: 20px;
+}
+
+::-moz-selection {
+    background: var(--primary);
+    color: #ffffff;
+}
+
+::selection {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.card h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: rgb(43, 43, 43);
+}
+
+p {
+    margin: 0;
+    color: rgb(46, 46, 46);
+}
+
+.card {
+    box-shadow: 2px 2px 6px 2px rgb(228, 228, 228);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-footer {
+    margin-top: auto;
+    padding: 0 30px 30px 30px;
+}
+
+.card-body {
+    padding: 30px 30px 0px 30px;
+}
+
+
+.row {
+    display: grid;
+    gap: 20px;
+}
+
+.buttons {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section {
+    margin: 20px 0;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+button {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    border: 0;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 576px) {
+    .col-sm-1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .col-sm-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .col-sm-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .col-sm-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .col-sm-5 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .col-sm-6 {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .col-sm-7 {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .col-sm-8 {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .col-sm-9 {
+        grid-template-columns: repeat(9, 1fr);
+    }
+
+    .col-sm-10 {
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    .col-sm-11 {
+        grid-template-columns: repeat(11, 1fr);
+    }
+
+    .col-sm-12 {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .use-sm-1 {
+        grid-column: span 1;
+    }
+
+    .use-sm-2 {
+        grid-column: span 2;
+    }
+
+    .use-sm-3 {
+        grid-column: span 3;
+    }
+
+    .use-sm-4 {
+        grid-column: span 4;
+    }
+
+    .use-sm-5 {
+        grid-column: span 5;
+    }
+
+    .use-sm-6 {
+        grid-column: span 6;
+    }
+
+    .use-sm-7 {
+        grid-column: span 7;
+    }
+
+    .use-sm-8 {
+        grid-column: span 8;
+    }
+
+    .use-sm-9 {
+        grid-column: span 9;
+    }
+
+    .use-sm-10 {
+        grid-column: span 10;
+    }
+
+    .use-sm-11 {
+        grid-column: span 11;
+    }
+
+    .use-sm-12 {
+        grid-column: span 12;
+    }
+
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .col-md-1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .col-md-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .col-md-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .col-md-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .col-md-5 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .col-md-6 {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .col-md-7 {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .col-md-8 {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .col-md-9 {
+        grid-template-columns: repeat(9, 1fr);
+    }
+
+    .col-md-10 {
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    .col-md-11 {
+        grid-template-columns: repeat(11, 1fr);
+    }
+
+    .col-md-12 {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .md-use-1 {
+        grid-column: span 1;
+    }
+
+    .md-use-2 {
+        grid-column: span 2;
+    }
+
+    .md-use-3 {
+        grid-column: span 3;
+    }
+
+    .md-use-4 {
+        grid-column: span 4;
+    }
+
+    .md-use-5 {
+        grid-column: span 5;
+    }
+
+    .md-use-6 {
+        grid-column: span 6;
+    }
+
+    .md-use-7 {
+        grid-column: span 7;
+    }
+
+    .md-use-8 {
+        grid-column: span 8;
+    }
+
+    .md-use-9 {
+        grid-column: span 9;
+    }
+
+    .md-use-10 {
+        grid-column: span 10;
+    }
+
+    .md-use-11 {
+        grid-column: span 11;
+    }
+
+    .md-use-12 {
+        grid-column: span 12;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .col-lg-1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .col-lg-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .col-lg-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .col-lg-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .col-lg-5 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .col-lg-6 {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .col-lg-7 {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .col-lg-8 {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .col-lg-9 {
+        grid-template-columns: repeat(9, 1fr);
+    }
+
+    .col-lg-10 {
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    .col-lg-11 {
+        grid-template-columns: repeat(11, 1fr);
+    }
+
+    .col-lg-12 {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .lg-use-1 {
+        grid-column: span 1;
+    }
+
+    .lg-use-2 {
+        grid-column: span 2;
+    }
+
+    .lg-use-3 {
+        grid-column: span 3;
+    }
+
+    .lg-use-4 {
+        grid-column: span 4;
+    }
+
+    .lg-use-5 {
+        grid-column: span 5;
+    }
+
+    .lg-use-6 {
+        grid-column: span 6;
+    }
+
+    .lg-use-7 {
+        grid-column: span 7;
+    }
+
+    .lg-use-8 {
+        grid-column: span 8;
+    }
+
+    .lg-use-9 {
+        grid-column: span 9;
+    }
+
+    .lg-use-10 {
+        grid-column: span 10;
+    }
+
+    .lg-use-11 {
+        grid-column: span 11;
+    }
+
+    .lg-use-12 {
+        grid-column: span 12;
+    }
+
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .col-xl-1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .col-xl-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .col-xl-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .col-xl-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .col-xl-5 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .col-xl-6 {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .col-xl-7 {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .col-xl-8 {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .col-xl-9 {
+        grid-template-columns: repeat(9, 1fr);
+    }
+
+    .col-xl-10 {
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    .col-xl-11 {
+        grid-template-columns: repeat(11, 1fr);
+    }
+
+    .col-xl-12 {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .xl-use-1 {
+        grid-column: span 1;
+    }
+
+    .xl-use-2 {
+        grid-column: span 2;
+    }
+
+    .xl-use-3 {
+        grid-column: span 3;
+    }
+
+    .xl-use-4 {
+        grid-column: span 4;
+    }
+
+    .xl-use-5 {
+        grid-column: span 5;
+    }
+
+    .xl-use-6 {
+        grid-column: span 6;
+    }
+
+    .xl-use-7 {
+        grid-column: span 7;
+    }
+
+    .xl-use-8 {
+        grid-column: span 8;
+    }
+
+    .xl-use-9 {
+        grid-column: span 9;
+    }
+
+    .xl-use-10 {
+        grid-column: span 10;
+    }
+
+    .xl-use-11 {
+        grid-column: span 11;
+    }
+
+    .xl-use-12 {
+        grid-column: span 12;
+    }
+
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .col-xxl-1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .col-xxl-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .col-xxl-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .col-xxl-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .col-xxl-5 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .col-xxl-6 {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .col-xxl-7 {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .col-xxl-8 {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .col-xxl-9 {
+        grid-template-columns: repeat(9, 1fr);
+    }
+
+    .col-xxl-10 {
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    .col-xxl-11 {
+        grid-template-columns: repeat(11, 1fr);
+    }
+
+    .col-xxl-12 {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .xxl-use-1 {
+        grid-column: span 1;
+    }
+
+    .xxl-use-2 {
+        grid-column: span 2;
+    }
+
+    .xxl-use-3 {
+        grid-column: span 3;
+    }
+
+    .xxl-use-4 {
+        grid-column: span 4;
+    }
+
+    .xxl-use-5 {
+        grid-column: span 5;
+    }
+
+    .xxl-use-6 {
+        grid-column: span 6;
+    }
+
+    .xxl-use-7 {
+        grid-column: span 7;
+    }
+
+    .xxl-use-8 {
+        grid-column: span 8;
+    }
+
+    .xxl-use-9 {
+        grid-column: span 9;
+    }
+
+    .xxl-use-10 {
+        grid-column: span 10;
+    }
+
+    .xxl-use-11 {
+        grid-column: span 11;
+    }
+
+    .xxl-use-12 {
+        grid-column: span 12;
+    }
+
+    .container {
+        max-width: 1320px;
+    }
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+.quadrate {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    border-radius: var(--corner)
+}
+
+.rectangle {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    border-radius: var(--corner)
+}
+
+.container-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.container-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--corner)
+}
+
+.card img {
+    border-radius: var(--corner) var(--corner) 0 0 !important;
+}
+
+.video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--corner);
+}
